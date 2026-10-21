@@ -1,0 +1,6 @@
+# Python >= 3.10. The benchmark uses only the standard library, so there is nothing to install.
+# The viewer (view_generated.py) needs Tkinter: bundled with python.org installers on
+# Windows/macOS; on Debian/Ubuntu install it with `sudo apt install python3-tk`.
+
+# Optional: run the test suite with pytest instead of `python -m unittest discover tests`.
+# pytest>=7

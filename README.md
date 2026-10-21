@@ -23,7 +23,7 @@ A benchmarking engine for comparing solvers (LLM-based and classical) on the tra
 ## Requirements and setup
 
 - **Python 3.10 or newer** (developed on 3.12, targets 3.14).
-- **Standard library only**, so there's nothing to `pip install`.
+- **Standard library only**, so there's nothing to `pip install`. `requirements.txt` documents this and lists pytest as an optional extra, so `pip install -r requirements.txt` is a harmless no-op.
 - **Tkinter** is needed only for the viewer (`view_generated.py`). It ships with the python.org installers on Windows and macOS. On Debian/Ubuntu run `sudo apt install python3-tk`.
 - Run every script **from the repository root**. The scripts import each other and use relative paths such as `testcases/` and `outputs/`.
 
@@ -664,6 +664,7 @@ solvers/                baseline solvers (Oracle, NearestNeighbour, Random, Alwa
 data/national/          Waterloo national instances (.tsp) + sidecars with published optima
 tests/                  unittest suite
 plan.md                 design notes
+requirements.txt        no third-party dependencies (stdlib only); pytest optional
 testcases/              generated (git-ignored)
 outputs/                solver results and reports (git-ignored)
 ```
