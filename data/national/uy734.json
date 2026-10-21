@@ -1,0 +1,18 @@
+{
+  "name": "uy734",
+  "category": "unconstrained_large",
+  "n": 734,
+  "seed": null,
+  "deadlines": [],
+  "precedences": [],
+  "params": {
+    "country": "Uruguay",
+    "source": "https://www.math.uwaterloo.ca/tsp/world/uy734.tsp"
+  },
+  "feasible": true,
+  "optimal_cost": 79114,
+  "optimal_tour": null,
+  "reference_source": "published optimum (Waterloo National TSP)",
+  "infeasible_class": null,
+  "witness_tour": null
+}

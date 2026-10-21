@@ -1,0 +1,18 @@
+{
+  "name": "lu980",
+  "category": "unconstrained_large",
+  "n": 980,
+  "seed": null,
+  "deadlines": [],
+  "precedences": [],
+  "params": {
+    "country": "Luxembourg",
+    "source": "https://www.math.uwaterloo.ca/tsp/world/lu980.tsp"
+  },
+  "feasible": true,
+  "optimal_cost": 11340,
+  "optimal_tour": null,
+  "reference_source": "published optimum (Waterloo National TSP)",
+  "infeasible_class": null,
+  "witness_tour": null
+}

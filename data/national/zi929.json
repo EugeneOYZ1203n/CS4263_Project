@@ -1,0 +1,18 @@
+{
+  "name": "zi929",
+  "category": "unconstrained_large",
+  "n": 929,
+  "seed": null,
+  "deadlines": [],
+  "precedences": [],
+  "params": {
+    "country": "Zimbabwe",
+    "source": "https://www.math.uwaterloo.ca/tsp/world/zi929.tsp"
+  },
+  "feasible": true,
+  "optimal_cost": 95345,
+  "optimal_tour": null,
+  "reference_source": "published optimum (Waterloo National TSP)",
+  "infeasible_class": null,
+  "witness_tour": null
+}

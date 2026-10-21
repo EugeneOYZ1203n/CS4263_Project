@@ -1,0 +1,18 @@
+{
+  "name": "qa194",
+  "category": "unconstrained_large",
+  "n": 194,
+  "seed": null,
+  "deadlines": [],
+  "precedences": [],
+  "params": {
+    "country": "Qatar",
+    "source": "https://www.math.uwaterloo.ca/tsp/world/qa194.tsp"
+  },
+  "feasible": true,
+  "optimal_cost": 9352,
+  "optimal_tour": null,
+  "reference_source": "published optimum (Waterloo National TSP)",
+  "infeasible_class": null,
+  "witness_tour": null
+}
