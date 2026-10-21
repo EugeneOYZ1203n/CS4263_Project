@@ -87,7 +87,7 @@ def safe_name(name: str) -> str:
 
 
 def run_solver(solver: tc.Solver, cases: list[Path], out_dir: Path, k: int, base_seed: int,
-               time_limit: float, testcases_dir: str) -> Counter:
+               time_limit: float, testcases_dir: str, verbose: bool = True) -> Counter:
     out_dir.mkdir(parents=True)
     (out_dir / "run_config.json").write_text(json.dumps({
         "solver": solver.name, "solver_class": type(solver).__qualname__,
@@ -111,8 +111,9 @@ def run_solver(solver: tc.Solver, cases: list[Path], out_dir: Path, k: int, base
             "name": problem.name, "category": problem.category, "testcase": rel(tsp),
             "reference": reference_summary(ref), "runs": runs,
         }, indent=1))
-        print(f"  [{i:4d}/{len(cases)}] {problem.category}/{problem.name}: "
-              + ", ".join(r["label"] for r in runs), flush=True)
+        if verbose:
+            print(f"  [{i:4d}/{len(cases)}] {problem.category}/{problem.name}: "
+                  + ", ".join(r["label"] for r in runs), flush=True)
     cfg = json.loads((out_dir / "run_config.json").read_text())
     cfg["finished"] = datetime.now().isoformat(timespec="seconds")
     cfg["total_wall_time"] = time.perf_counter() - t_start
